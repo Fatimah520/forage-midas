@@ -1,13 +1,10 @@
 general:
-  kafka-topic: "my-topic"
-
-  kafka:
-    topic:
-      name: midas-transactions
+  kafka-topic: "midas-transactions"
 
 spring:
   kafka:
-    bootstrap-servers: localhost:9092
     consumer:
       group-id: midas-core-group
-      auto-offset-reset: earliest
+    topic: midas-transactions
+
+
